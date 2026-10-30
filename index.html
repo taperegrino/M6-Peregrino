@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A Valorant-inspired portfolio using Local Storage persistence.">
+        <title>VALORANT // PORTFOLIO</title>
+
+        <!-- Loads the saved theme before the page is displayed-->
+         <script src="js/theme-init.js"></script>
+
+         <link rel="stylesheet" href="css/style.css">
+         <script src="js/app.js" defer></script>
+    </head>
+
+    <body>
+        <header class="site-header">
+            <a class="brand" href="#home">
+                <span class="brand-symbol">V</span>
+                NIGHTFALL
+            </a>
+
+            <button
+                id="theme-toggle"
+                class="button button-small"
+                type="button"
+                aria-label="Change color theme">
+            DARK MODE
+            </button>
+        </header>
+
+        <main id="#home">
+            <section class="hero section-shell">
+                <div class="hero-content">
+                    <p class="eyebrow">INITIATE // DIGITAL CREATIVE</p>
+
+                    <h1>
+                        CREATE.
+                        <span>ADAPT.</span>
+                        DOMINATE.
+                    </h1>
+
+                    <p class="hero-copy">
+                        I design visual stories, interactive websites, and digital
+                        experiences inspired by strategy, teamwork, and competitive day.
+                    </p>
+
+                    <p 
+                        id="welcome-message"
+                        class="welcome-message"
+                        aria-live="polite">
+                    </p>
+
+                    <a class="button" href="#missions">
+                        VIEW MISSIONS
+                    </a>
+                </div>
+
+                <div class="hero-mark" aria-hidden="true">
+                    <span>V</span>
+                </div>
+            </section>
+
+            <section id="missions" class="section-shell mission-section">
+                <div class="section-heading">
+                    <p class="eyebrow">SELECTED OPERATIONS</p>
+                    <h2>MISSION ARCHIVE</h2>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="card-topline">
+                            <span>OPERATION 01</span>
+                            <span class="status">COMPLETE</span>
+                        </div>
+
+                        <div class="agent-icon">01</div>
+
+                        <h3>FRAME BY FRAME</h3>
+
+                        <p>
+                            A short animation project focused on movement, timing,
+                            expression, and character performance.
+                        </p>
+
+                        <span class="card-line"></span>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card">
+                            <span>OPERATIONS 02</span>
+                            <span class="status">COMPLETE</span>
+                        </div>
+
+                        <div class="agent-icon">02</div>
+
+                        <h3>SIGNAL / NOISE</h3>
+
+                        <p>
+                            A responsive editorial design created to present information
+                            clearly and efficiently.
+                        </p>
+
+                        <span class="card-line"></span>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="card-topline">
+                            <span>OPERATION 03</span>
+                            <span class="status">ACTIVE</span>
+                        </div>
+
+                        <div class="agent-icon">03</div>
+
+                        <h3>NIGHT TRANSIT</h3>
+
+                        <p>
+                            A visual study of city lights,motion, atmosphere, and cinematic
+                            composition.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="contact section-shell">
+                <div class="contact-copy">
+                    <p class="eyebrow">OPEN CHANNEL</p>
+
+                    <h2>READY TO ENTER THE SITE</h2>
+
+                    <p>
+                        Enter your name to activate a personalized experience.
+                        Only your name, them, and latest visit time will be saved.
+                    </p>
+                </div>
+
+                <form id="visitor-form" novalidate>
+                    <label for="visitor-name">AGENT NAME</label>
+
+                    <div class="form-row">
+                        <input
+                            id="visitor-name"
+                            name="visitorName"
+                            type="text"
+                            maxlength="60"
+                            autocomplete="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                        <button class="button" type="submit">
+                            CONFIRM
+                        </button>
+                    </div>
+
+                    <p
+                    id="form-message"
+                    class="form-message"
+                    aria-live="polite">
+                    </p>
+                </form>
+            </section>
+        </main>
+
+        <footer class="site-footer section-shell">
+            <span>VALORANT // NIGHTFALL PROTOCOL</span>
+            <span id="last-visit" aria-live="polite"></span>
+        </footer>
+    </body>
+</html>
